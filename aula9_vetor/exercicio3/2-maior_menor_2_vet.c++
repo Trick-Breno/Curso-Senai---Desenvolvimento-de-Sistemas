@@ -1,11 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <windows.h>
 using namespace std;
 
 int main() {
-    SetConsoleOutputCP(CP_UTF8);
 
     vector<string>planetas = { "Vênus", "Mercúrio", "Terra", "Marte", "Júpiter", "Saturno",
     "Netuno", "Urano"};
