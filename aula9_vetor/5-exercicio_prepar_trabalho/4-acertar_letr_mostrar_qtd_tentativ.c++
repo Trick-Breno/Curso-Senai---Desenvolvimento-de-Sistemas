@@ -1,7 +1,5 @@
-/*Programa 3 - Jogando o Jogo:**
-   - Crie um programa que faça o sorteio de uma letra aleatória do alfabeto utilizando a função `gerarLetraAleatoria`.
-   - Permita que o jogador chute a letra até acertar ou atingir um limite de tentativas (por exemplo, 5 tentativas).
-   - Ao final, informe ao jogador se ele acertou ou não.
+/*Programa 4 - Exibindo Resultados:**
+   - Crie um programa que, após o jogador acertar a letra ou esgotar o limite de tentativas, exiba a letra sorteada e a quantidade de tentativas que o jogador utilizou.
 */
 #include <iostream>
 #include <random>
@@ -37,11 +35,13 @@ int main () {
     } while (letra_usuario != letra_sorteada && contar_tentativas.size() < 5 );
 
     if(letra_usuario == letra_sorteada) {
-        cout << "acertou";
+        cout << "Acertou!" << endl;
     } else {
-        cout << "errou";
+        cout << "Errou!" <<endl;
     }
 
+    cout << "A letra sorteada foi " << letra_sorteada <<endl;
+    cout << "O usuário utilizou " << contar_tentativas.size() << " tenrativas";
 
 
     return 0;

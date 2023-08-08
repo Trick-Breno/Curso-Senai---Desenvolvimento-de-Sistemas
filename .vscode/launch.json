@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/workspaces/Curso-Senai---Desenvolvimento-de-Sistemas/aula9_vetor/exercicio4_vet_func",
-      "program": "/workspaces/Curso-Senai---Desenvolvimento-de-Sistemas/aula9_vetor/exercicio4_vet_func/build/Debug/outDebug",
+      "cwd": "/workspaces/Curso-Senai---Desenvolvimento-de-Sistemas/aula9_vetor/5-exercicio_prepar_trabalho",
+      "program": "/workspaces/Curso-Senai---Desenvolvimento-de-Sistemas/aula9_vetor/5-exercicio_prepar_trabalho/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

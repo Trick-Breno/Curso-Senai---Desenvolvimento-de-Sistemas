@@ -1,8 +1,7 @@
-/*Programa 3 - Jogando o Jogo:**
-   - Crie um programa que faça o sorteio de uma letra aleatória do alfabeto utilizando a função `gerarLetraAleatoria`.
-   - Permita que o jogador chute a letra até acertar ou atingir um limite de tentativas (por exemplo, 5 tentativas).
-   - Ao final, informe ao jogador se ele acertou ou não.
-*/
+/*Programa 6 - Dica para o Jogador:**
+   - Crie um programa que forneça uma dica ao jogador antes do início do jogo, informando se a letra sorteada é uma vogal ou uma consoante.
+   - Utilize condicionais para verificar se a letra sorteada é uma vogal (A, E, I, O, U) ou uma consoante.*/
+
 #include <iostream>
 #include <random>
 #include <vector>
@@ -29,6 +28,12 @@ int main () {
     char letra_usuario;
     vector<char>contar_tentativas;
 
+    if (letra_sorteada == 'a' || letra_sorteada == 'e' || letra_sorteada == 'i' || letra_sorteada == 'o' || letra_sorteada == 'u') {
+            cout << "A letra sorteada é uma vogal." << endl;
+        } else {
+            cout << "A letra sorteada é uma consoante." << endl;
+    }
+
     do {
         cout << "digite uma letra: ";
         cin >> letra_usuario;
@@ -37,11 +42,13 @@ int main () {
     } while (letra_usuario != letra_sorteada && contar_tentativas.size() < 5 );
 
     if(letra_usuario == letra_sorteada) {
-        cout << "acertou";
+        cout << "Acertou!" << endl;
     } else {
-        cout << "errou";
+        cout << "Errou!" <<endl;
     }
 
+    cout << "A letra sorteada foi " << letra_sorteada <<endl;
+    cout << "O usuário utilizou " << contar_tentativas.size() << " tenrativas";
 
 
     return 0;
