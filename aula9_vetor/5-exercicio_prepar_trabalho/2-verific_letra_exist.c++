@@ -9,15 +9,25 @@
 using namespace std;
 
 char verificarLetraNoAlfabeto(vector<char>& alfabeto, char letra_usuario) {
-    char encontrar_letra[0];
+    // char encontrar_letra[0];
+
+    bool encontrar_letra = false;
 
     for(int i = 0; i < alfabeto.size(); i++) {
-        if (encontrar_letra[0] == alfabeto[i]) {
-            encontrar_letra[i] = alfabeto[i];
+        if (letra_usuario == alfabeto[i]) {
+            // encontrar_letra[0] = alfabeto[i];
+            encontrar_letra = true;
         }
     }
 
-    return encontrar_letra[0];
+    if (encontrar_letra) {
+        cout << "Letra " << letra_usuario << " encontrada";
+    } else {
+        cout << "Letra " << letra_usuario << " nao encontrada";
+
+    }
+    return encontrar_letra;
+
 }
 
 int main() {
@@ -27,7 +37,7 @@ int main() {
     cout << "Digite uma letra: ";
     cin >> letra_usuario;
 
-    char verifition = verificarLetraNoAlfabeto(alfabeto, letra_usuario);
+    char verifition = verificarLetraNoAlfabeto(alfabeto, letra_usuario[0]);
 
     cout << "A letra " << verifition;
     return 0;
